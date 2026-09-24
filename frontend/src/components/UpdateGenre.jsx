@@ -17,7 +17,7 @@ export default function UpdateGenre({
     };
 
     const response = await fetch(
-      `http://localhost:8080/api/genre/${genreToEdit.id}`,
+      `https://game-library-y3au.onrender.com/api/genre/${genreToEdit.id}`,
       {
         method: 'PUT',
         headers: {

@@ -15,7 +15,7 @@ export default function CreateGenre({
       description
     };
 
-    const response = await fetch('http://localhost:8080/api/genres', {
+    const response = await fetch('https://game-library-y3au.onrender.com/api/genres', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

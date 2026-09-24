@@ -23,7 +23,7 @@ export default function UpdateGame({
     };
 
     const response = await fetch(
-      `http://localhost:8080/api/games/${gameToEdit.id}`,
+      `https://game-library-y3au.onrender.com/api/games/${gameToEdit.id}`,
       {
         method: 'PUT',
         headers: {

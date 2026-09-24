@@ -21,7 +21,7 @@ function App(){
 
   useEffect(() => {
     async function fetchGenreLink(){
-      const response = await fetch('http://localhost:8080/api/genres');
+      const response = await fetch('https://game-library-y3au.onrender.com/api/genres');
       const data = await response.json();
       setGenres(data);
     }
@@ -31,7 +31,7 @@ function App(){
 
   useEffect(() => {
     async function fetchGameLink(){
-      const response = await fetch('http://localhost:8080/api/games');
+      const response = await fetch('https://game-library-y3au.onrender.com/api/games');
       const data = await response.json();
       setGames(data);
     }
@@ -79,7 +79,7 @@ function App(){
 
   // DELETE GAME
   async function handleDeleteGameClick(id) {
-    const response = await fetch(`http://localhost:8080/api/games/${id}`, {
+    const response = await fetch(`https://game-library-y3au.onrender.com/api/games/${id}`, {
       method: 'DELETE'
     });
 
@@ -130,7 +130,7 @@ function App(){
 
   // DELETE GENRE
   async function handleGenreDeleteClick(id){
-    const response = await fetch(`http://localhost:8080/api/genres/${id}`, {
+    const response = await fetch(`https://game-library-y3au.onrender.com/api/genres/${id}`, {
       method: 'DELETE'
     });
 
