@@ -89,7 +89,7 @@ Deploying a full-stack application
 ![Game Library](screenshots/home.png)
 
 ### Game Management
-![Game Management](screenshots/game-management.png)
+![Game Management](screenshots/games.png)
 
 ### Genre Management
-![Genre Management](screenshots/genre-management.png)
+![Create Game](screenshots/addNewGame.png)
