@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Game Form</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Create your own Games:</h1>
+    <form action="/games/<%= genreId %>/create" method="post">
+        <label for="gameName">Name:</label>
+        <input type="text" name="name" id="gameName" required>
+
+        <label for="gameDesc">Description:</label>
+        <input type="text" name="description" id="gameDesc">
+        
+        <label for="gameDeveloper">Developer:</label>
+        <input type="text" name="developer" id="gameDeveloper">
+        
+        <label for="gamePlatform">Platform:</label>
+        <input type="text" name="platform" id="gamePlatform">
+        
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

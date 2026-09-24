@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.genre-card,
+.game-card {
+    background: #1f2937;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.genre-card:hover,
+.game-card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.genre-card {
+    cursor: pointer;
+}
+
+.game-card {
+    border-left: 4px solid #6366f1;
+}
+
+/* Buttons and links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+.create-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover,
+.create-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1f2937;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #374151;
+    color: white;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: 2px solid #6366f1;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.delete-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #dc2626;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(220, 38, 38, 0.4);
+}
+
+.delete-form {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #374151;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form select:focus {
+    outline: 2px solid #6366f1;
+}
+
+form select option {
+    background: #374151;
+    color: white;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= result.name %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%= result.name  %>
+    <br>
+    <%= result.description %>
+    <br>
+    <%= result.developer %>
+    <br>
+    <%= result.platform %>
+    <br>
+
+
+    <a href="/games/<%= result.id %>/edit" class="edit-btn">Edit Game</a>
+
+    <form action="/games/<%= result.id %>/delete" method="post" class="delete-form">
+        <button type="submit" class="delete-btn">Delete</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= result.name %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%= result.name  %>
+    <%= result.description  %>
+    <br>
+    <a href="/genres/<%= result.id %>/edit" class="edit-btn">Edit Genre</a>
+    <% for(let game of games){ %>
+        <a href="/games/<%= game.id %>">
+            <div class="game-card">
+                <%= game.name  %>
+                <%= game.description %>
+                <%= game.developer %>
+                <%= game.platform %>
+            </div>
+        </a>
+    <% } %> 
+    <br>
+    <a href="/games/<%= result.id %>/create" class="create-btn">Create Game</a>
+
+    <form action="/genres/<%= result.id %>/delete" method="post" class="delete-form">
+        <button type="submit" class="delete-btn">Delete</button>
+    </form>
+</body>
+</html>
