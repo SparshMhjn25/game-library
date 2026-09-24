@@ -13,4 +13,4 @@ app.use(cors());
 app.use(express.json());
 app.use('/', genreRouter);
 app.use('/', gameRouter);
-app.listen('8080', ()=> console.log("Server is now online..."));
+app.listen(process.env.PORT || 8080, () => console.log("Server is now online..."));
